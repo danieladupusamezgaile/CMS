@@ -3,11 +3,10 @@ import java.util.List;
 
 public class Department {
     private String name;
-    private List<Employee> employees;
+    private List<Employee> employees = new ArrayList<>();
 
     public Department(String name) {
         this.name = name;
-        this.employees = new ArrayList<>();
     }
 
     public String getName() {
