@@ -11,9 +11,9 @@ public class CompanyManagementSystem {
         String name = scanner.nextLine();
         Department department = new Department(name); // create new department
         departments.add(department); // add it to departments arrayList
-        System.out.println("╔═══════════════════════════════════════════╗");
-        System.out.println("║ Department " + name + " added successfully  ║");
-        System.out.println("╚═══════════════════════════════════════════╝");
+        System.out.println("╔══════════════════════════════════════════╗");
+        System.out.println("║ Department " + name + " added successfully  ");
+        System.out.println("╚══════════════════════════════════════════╝");
         pressEnterToContinue();
         this.run(); // return to menu
     }
@@ -47,10 +47,10 @@ public class CompanyManagementSystem {
         Employee employee = new Employee(name, id); // create new employee
         departments.get(deptNumber - 1).addEmployee(employee); // add employee to ArrayList
 
-        System.out.println("╔═══════════════════════════════════════════════════╗");
+        System.out.println("╔═════════════════════════════════════════════════════╗");
         System.out.println(
                 "║ Employee '" + name + "' added to department '" + departments.get(deptNumber - 1).getName() + "'");
-        System.out.println("╚═══════════════════════════════════════════════════╝");
+        System.out.println("╚═════════════════════════════════════════════════════╝");
 
         scanner.nextLine();
         pressEnterToContinue();
